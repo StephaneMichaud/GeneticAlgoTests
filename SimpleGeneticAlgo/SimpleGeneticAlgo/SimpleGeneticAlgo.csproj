@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Individual.cs" />
+    <Compile Include="IndividualNeural.cs" />
     <Compile Include="IndividualString.cs" />
     <Compile Include="Layer.cs" />
     <Compile Include="Matrix.cs" />

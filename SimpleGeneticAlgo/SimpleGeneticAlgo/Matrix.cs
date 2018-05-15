@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NEURAL
+namespace SimpleGeneticAlgo
 {
     /// <summary>
     /// This class will be created with the philosophy of a reuse in future projects in ML, numerical analysis
