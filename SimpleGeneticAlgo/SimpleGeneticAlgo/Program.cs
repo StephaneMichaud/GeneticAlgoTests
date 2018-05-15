@@ -10,7 +10,11 @@ namespace SimpleGeneticAlgo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello world!");
+            int[] structN = new int[]{4,2,2};
+            IndividualNeural parentA =new IndividualNeural( new NeuralNetwork(structN));
+            IndividualNeural parentB = new IndividualNeural(new NeuralNetwork(structN));
+            Individual[] enfants = parentA.ReturnChildrens(parentB);
+            int stop = 1;
         }
     }
 }

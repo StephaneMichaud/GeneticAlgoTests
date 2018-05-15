@@ -13,7 +13,7 @@ namespace SimpleGeneticAlgo
     public class Matrix
     {
         #region Basics.
-        private double[,] Table { get; set; }
+        public double[,] Table { get; set; }
         public int M { get; private set; }
         public int N { get; private set; }
         public Matrix(double[,] table)

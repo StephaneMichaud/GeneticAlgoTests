@@ -8,7 +8,7 @@ namespace SimpleGeneticAlgo
     class Layer
     {
         //Attributs
-        public List<Node> Neurons { get; private set;}
+        public List<Node> Neurons { get; set;}
         public ActivationEquation Equation { get; set; }
         public int NbNeurons
         {

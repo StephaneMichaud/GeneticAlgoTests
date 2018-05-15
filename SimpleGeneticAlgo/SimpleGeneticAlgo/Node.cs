@@ -30,7 +30,7 @@ namespace SimpleGeneticAlgo
         /// <summary>
         ///Sont les valeurs correspondant a l'importance connections avec les autre neurones des etages precedents
         /// </summary>
-        public Matrix Weights { get; private set; }
+        public Matrix Weights { get; set; }
 
         // Constructeurs
         public Node(int nConnection=0,int bias=0)

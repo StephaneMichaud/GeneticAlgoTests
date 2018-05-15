@@ -10,7 +10,7 @@ namespace SimpleGeneticAlgo
     {
         const double BASE_LEARNING_RATE = 0.01;
 
-        List<Layer> Layers { get; set; }
+       public List<Layer> Layers { get; set; }
         public double LearningRate { get; set; }
 
         public int NbLayers
@@ -58,6 +58,23 @@ namespace SimpleGeneticAlgo
             {
                 Layers.Add(new Layer(structure[i], structure[i - 1]));
             }
+        }
+        public NeuralNetwork(NeuralNetwork n)
+        {
+            Layers = new List<Layer>(n.NbLayers);
+            //On instancie le premier etage. Il ne contient pas de connexions car il ny a pas detage precedent
+            Layers.Add(new Layer(n.Layers[0].NbNeurons));
+            //On instancie les etages suivants on mettant le nombre de connexions pour les neurones au nombre de neurones de letage precedent
+            for (int i = 1; i < NbLayers; i++)
+            {
+                Layers.Add(new Layer(n.Layers[i].NbNeurons, n.Layers[i-1].NbNeurons));
+                for (int j = 0; j < Layers[i].NbNeurons; j++)
+                {
+                    Layers[i].Neurons[j].Weights = new Matrix(n.Layers[i].Neurons[j].Weights.GetTable());
+                }
+
+            }
+
         }
         public Matrix FeedForward(double[,] inputs)
         {
