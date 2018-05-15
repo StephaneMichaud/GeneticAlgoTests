@@ -44,6 +44,10 @@
   <ItemGroup>
     <Compile Include="Individual.cs" />
     <Compile Include="IndividualString.cs" />
+    <Compile Include="Layer.cs" />
+    <Compile Include="Matrix.cs" />
+    <Compile Include="NeuralNetwork.cs" />
+    <Compile Include="Node.cs" />
     <Compile Include="Population.cs" />
     <Compile Include="PopulationString.cs" />
     <Compile Include="Program.cs" />
