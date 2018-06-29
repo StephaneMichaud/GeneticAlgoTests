@@ -50,6 +50,7 @@
     <Compile Include="NeuralNetwork.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Population.cs" />
+    <Compile Include="PopulationNeural.cs" />
     <Compile Include="PopulationString.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

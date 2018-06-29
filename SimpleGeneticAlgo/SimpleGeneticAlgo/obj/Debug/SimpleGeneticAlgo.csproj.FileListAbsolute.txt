@@ -1,7 +1,7 @@
 C:\Users\Stéphane\source\repos\GeneticAlgoTests\SimpleGeneticAlgo\SimpleGeneticAlgo\bin\Debug\SimpleGeneticAlgo.exe.config
 C:\Users\Stéphane\source\repos\GeneticAlgoTests\SimpleGeneticAlgo\SimpleGeneticAlgo\bin\Debug\SimpleGeneticAlgo.exe
 C:\Users\Stéphane\source\repos\GeneticAlgoTests\SimpleGeneticAlgo\SimpleGeneticAlgo\bin\Debug\SimpleGeneticAlgo.pdb
-C:\Users\Stéphane\source\repos\GeneticAlgoTests\SimpleGeneticAlgo\SimpleGeneticAlgo\obj\Debug\SimpleGeneticAlgo.csprojResolveAssemblyReference.cache
 C:\Users\Stéphane\source\repos\GeneticAlgoTests\SimpleGeneticAlgo\SimpleGeneticAlgo\obj\Debug\SimpleGeneticAlgo.csproj.CoreCompileInputs.cache
 C:\Users\Stéphane\source\repos\GeneticAlgoTests\SimpleGeneticAlgo\SimpleGeneticAlgo\obj\Debug\SimpleGeneticAlgo.exe
 C:\Users\Stéphane\source\repos\GeneticAlgoTests\SimpleGeneticAlgo\SimpleGeneticAlgo\obj\Debug\SimpleGeneticAlgo.pdb
+C:\Users\Stéphane\source\repos\GeneticAlgoTests\SimpleGeneticAlgo\SimpleGeneticAlgo\obj\Debug\SimpleGeneticAlgo.csprojAssemblyReference.cache

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleGeneticAlgo
+namespace NEURAL
 {
     /// <summary>
     /// This class will be created with the philosophy of a reuse in future projects in ML, numerical analysis
@@ -13,7 +13,7 @@ namespace SimpleGeneticAlgo
     public class Matrix
     {
         #region Basics.
-        public double[,] Table { get; set; }
+        private double[,] Table { get; set; }
         public int M { get; private set; }
         public int N { get; private set; }
         public Matrix(double[,] table)
@@ -21,6 +21,16 @@ namespace SimpleGeneticAlgo
             Table = table;
             M = table.GetLength(0);
             N = table.GetLength(1);
+        }
+        public Matrix(double [] table)
+        {
+            Table = new double[table.Length, 1];
+            for (int i = 0; i < table.Length; i++)
+            {
+                Table[i, 0] = table[i];
+            }
+            M = table.Length;
+            N = 1;
         }
         public Matrix(double[,] table, Random generator)
         {
@@ -275,6 +285,11 @@ namespace SimpleGeneticAlgo
 
         #region Client code interaction functions.
         public double this [int i, int j] { set { Table[i, j] = value; } get { return Table[i, j]; } }
+
+        public void ChangeValue(int i,int j,double v)
+        {
+            Table[i, j] = v;
+        }
         public double[,] GetTable()
         {
             double[,] t = new double[M, N];
